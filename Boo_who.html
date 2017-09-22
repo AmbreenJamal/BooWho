@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+<h2>Boo who</h2>
+
+<p>Check if a value is classified as a boolean primitive. Return true or false.</p>
+<p>Boolean primitives are true and false.</p>
+<ul>
+<li>booWho(true) should return true.</li>
+<li>booWho(false) should return true.</li>
+<li>booWho([1, 2, 3]) should return false.</li>
+<li>booWho({ "a": 1 }) should return false.</i>
+<li>booWho(1) should return false.</li>
+<li>booWho(NaN) should return false.</li>
+<li>booWho("a") should return false.</li>
+<li>i>booWho("true") should return false.</li>
+<li>booWho("false") should return false.</li>
+</ul>
+</p><br/>
+<p>======================================================</p>
+<p id="orignal"></p>..........................
+<p id="demo"></p>
+<script>
+function booWho(bool) {
+ 
+ 
+ 
+ var type=typeof bool 
+ if(type=="boolean")
+   return true;
+   else 
+   return false;
+   ////===============2nd solution =================	
+   //return typeof bool ==='boolean';
+
+}	
+
+
+var bool= { "a": 1 };
+document.getElementById("orignal").innerHTML=bool;
+console.log(booWho(bool));
+document.getElementById("demo").innerHTML=booWho(bool);
+</script>
+
+
+</body>
+</html>
